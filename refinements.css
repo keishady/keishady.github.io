@@ -49,6 +49,17 @@
   transform: translateY(1px);
 }
 
+/* Navigation needs to read as navigation, not micro-copy. */
+.nav {
+  gap: 30px;
+}
+
+.nav a {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
 /* ---- Hero ---- */
 .cover {
   padding: 56px 0 40px;
@@ -62,10 +73,10 @@
 }
 
 .cover h1 {
-  max-width: 760px;
-  font-size: clamp(46px, 4.7vw, 70px);
-  line-height: 1.06;
-  letter-spacing: -0.045em;
+  max-width: 690px;
+  font-size: clamp(38px, 3.8vw, 56px);
+  line-height: 1.10;
+  letter-spacing: -0.035em;
   font-weight: 800;
 }
 
@@ -75,7 +86,7 @@
 
 .dek {
   max-width: 690px;
-  margin-top: 25px;
+  margin-top: 24px;
   font-size: 15px;
   line-height: 1.95;
 }
@@ -122,6 +133,15 @@
   letter-spacing: .08em;
 }
 
+/* The second headline should support the page, not compete with the hero. */
+.editorial-copy h2 {
+  margin: 16px 0 12px;
+  font-size: clamp(27px, 2.9vw, 40px);
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
 /* ---- Published review cards ---- */
 .post header {
   align-self: start;
@@ -154,6 +174,14 @@
     font-size: 12px;
   }
 
+  .nav {
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
   .cover-grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -165,8 +193,8 @@
   }
 
   .cover h1 {
-    max-width: 800px;
-    font-size: clamp(44px, 7vw, 64px);
+    max-width: 720px;
+    font-size: clamp(38px, 6vw, 52px);
   }
 }
 
@@ -198,6 +226,15 @@
     letter-spacing: .12em;
   }
 
+  .nav {
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 9px;
+    letter-spacing: .03em;
+  }
+
   .cover {
     padding: 40px 0 34px;
   }
@@ -207,8 +244,12 @@
   }
 
   .cover h1 {
-    font-size: clamp(38px, 12vw, 52px);
-    line-height: 1.08;
+    font-size: clamp(34px, 10vw, 46px);
+    line-height: 1.10;
+  }
+
+  .editorial-copy h2 {
+    font-size: clamp(25px, 8vw, 34px);
   }
 
   .dek {
