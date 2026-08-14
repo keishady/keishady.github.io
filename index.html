@@ -3,75 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 工具箱日志</title>
+  <meta name="description" content="AI 工具实测、工作流记录，以及产品与商业分析。">
+  <title>AI 工具箱日志 · AI Tools / Products / Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&family=Spectral:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">AI<span>工具箱日志</span></a>
-      <nav class="site-nav">
-        <a href="#posts">文章</a>
+  <header class="masthead">
+    <div class="masthead-inner wrap">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-en">AI TOOLBOX LOG</span>
+        <span class="brand-cn">AI 工具箱日志</span>
+      </a>
+      <div class="issue">ISSUE 01 · 2026</div>
+      <nav class="nav" aria-label="主导航">
+        <a href="#posts">AI 测评</a>
+        <a href="#business">商业分析</a>
         <a href="#about">关于</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>我的 AI 工具使用日志</h1>
-      <p>记录用各种 AI 工具做事的经验、踩过的坑和成果展示。</p>
-    </div>
-  </section>
+  <main id="top">
+    <section class="cover">
+      <div class="wrap">
+        <div class="cover-meta">
+          <span class="spectral-label">INDEPENDENT AI NOTES</span>
+          <span class="rule"></span>
+          <span class="tag tag-ai">AI TOOLS</span>
+          <span class="tag">BUSINESS</span>
+        </div>
 
-  <main id="posts" class="container">
-    <article class="post">
-      <header>
-        <h2>用 AI 批量生成文章配图</h2>
-        <p class="meta">2026-07-28 · 工具：图像生成 · 阅读 2 分钟</p>
-      </header>
-      <p>最近在用图像生成工具给文章配图，效果相当不错。下面是我生成的一组封面图：</p>
-      <figure>
-        <img src="https://picsum.photos/seed/ai1/800/400" alt="AI 生成的封面图示例">
-        <figcaption>示例配图（替换为你的实际图片路径）</figcaption>
-      </figure>
-      <p>我还录了一个完整的操作演示视频：</p>
-      <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube 演示视频" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </article>
+        <div class="cover-grid">
+          <div>
+            <div class="eyebrow">TESTED · USED · BROKEN DOWN</div>
+            <h1>AI 工具实测，<br>商业逻辑拆解。</h1>
+            <p class="dek">记录真正跑过的 AI 工具、工作流、成本和失败；也拆解产品、商业模式、市场与竞争。少一点搬运，多一点可复现的判断。</p>
+          </div>
 
-    <article class="post">
-      <header>
-        <h2>用 AI 写代码的高效工作流</h2>
-        <p class="meta">2026-07-20 · 工具：编程助手 · 阅读 3 分钟</p>
-      </header>
-      <p>把 AI 变成结对编程伙伴之后，开发效率提升了不少。关键是要把需求描述清楚，并让 AI 一步步验证。这里分享一下我的工作流：</p>
-      <ul>
-        <li>先用自然语言描述完整需求</li>
-        <li>让 AI 拆解任务并生成骨架代码</li>
-        <li>逐段审查、测试、再迭代</li>
-      </ul>
-      <figure>
-        <img src="https://picsum.photos/seed/ai2/800/400" alt="AI 编程工作流示意图">
-        <figcaption>工作流示意图（替换为你的实际图片路径）</figcaption>
-      </figure>
-      <div class="video-embed">
-        <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=170001&bvid=BV17x411w7KC&cid=249372&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+          <aside class="cover-note">
+            <div class="note-label">EDITORIAL NOTE</div>
+            <div class="note-block">
+              <strong>AI TESTS</strong>
+              <p>效果、成本、限制、适用场景，以及能不能真的完成工作。</p>
+            </div>
+            <div class="note-block">
+              <strong>BUSINESS</strong>
+              <p>产品怎么赚钱、用户为什么买、增长从哪里来、风险在哪里。</p>
+            </div>
+            <span class="stamp">01</span>
+          </aside>
+        </div>
       </div>
-    </article>
+    </section>
+
+    <section class="editorial wrap">
+      <div class="section-label">
+        <span>EDITOR'S FILE</span>
+        <span>本站怎么写</span>
+      </div>
+
+      <div class="editorial-grid">
+        <div class="editorial-copy">
+          <span class="kicker ai">EDITORIAL / 001</span>
+          <h2>这里不做工具新闻搬运。</h2>
+          <p>一款工具值不值得用，不看发布会说了什么，而看它在真实任务里能不能稳定完成、成本是多少、哪里会失败。商业分析也是一样：先看产品和用户，再谈故事。</p>
+        </div>
+
+        <aside class="verdict-panel">
+          <div class="panel-head">WHAT GETS RECORDED</div>
+          <div class="verdict">能复现的过程，比一句“好用”更重要。</div>
+          <dl>
+            <div><dt>TEST</dt><dd>实际任务与结果</dd></div>
+            <div><dt>COST</dt><dd>时间、订阅、算力成本</dd></div>
+            <div><dt>LIMIT</dt><dd>失败点与不适用场景</dd></div>
+            <div><dt>VALUE</dt><dd>最终有没有省事或赚钱</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quote-section wrap" aria-label="编辑原则">
+      <div class="tracing-card">
+        <div class="quote-small">PULL QUOTE / WORKING PRINCIPLE</div>
+        <blockquote>工具不是结论，工作流才是。</blockquote>
+        <p>先跑，先坏，先记录，再下判断。</p>
+      </div>
+    </section>
+
+    <section class="latest-head wrap">
+      <div class="section-label">
+        <span>AI TESTS</span>
+        <span>工具实测 / 工作流 / 模型体验</span>
+      </div>
+      <p class="section-intro">以后从本地编辑器一键发布的文章，会直接出现在下面。</p>
+    </section>
+
+    <main id="posts" class="posts wrap">
+      <article class="post">
+        <header>
+          <div class="post-topline">
+            <span class="kicker ai">OPENING NOTE</span>
+            <span class="index-no">001</span>
+          </div>
+          <h2>这个博客写什么：AI 工具实测与商业分析</h2>
+          <p class="meta">2026-08-14 · 开刊说明 · 阅读 2 分钟</p>
+        </header>
+        <div class="content">
+          <p>这个站只保留两条主线：AI 工具实测，以及和产品、市场、商业模式有关的分析。</p>
+          <p>AI 部分重点记录真实使用过程：输入是什么、跑了多少次、花了多少钱、哪里成功、哪里翻车，以及最后有没有进入可用工作流。</p>
+          <p>商业部分不追求宏大叙事，优先拆产品本身：谁在付钱、为什么付钱、替代方案是什么、增长和风险分别在哪里。</p>
+          <blockquote>如果一个结论不能帮助下一次选择工具、设计流程或判断生意，它就不值得占太多篇幅。</blockquote>
+        </div>
+      </article>
+    </main>
+
+    <section id="business" class="business-band">
+      <div class="wrap">
+        <div class="section-label business-label">
+          <span>BUSINESS FILE</span>
+          <span>产品 / 模式 / 市场 / 竞争</span>
+        </div>
+
+        <div class="business-grid">
+          <article class="business-card">
+            <span class="kicker biz">PRODUCT</span>
+            <h3>产品到底解决了什么问题？</h3>
+            <p>不先看融资故事，先看用户为什么愿意从旧方案迁移，以及产品是不是足够频繁地被需要。</p>
+            <div class="business-meta">PRODUCT FIT · USAGE · SWITCHING COST</div>
+          </article>
+          <article class="business-card">
+            <span class="kicker biz">MODEL</span>
+            <h3>这门生意靠什么赚钱？</h3>
+            <p>订阅、按量、服务费、广告还是交易抽成。收入结构不同，增长方式和风险也完全不同。</p>
+            <div class="business-meta">PRICING · MARGIN · RETENTION</div>
+          </article>
+          <article class="business-card">
+            <span class="kicker biz">MARKET</span>
+            <h3>增长是真的，还是热度？</h3>
+            <p>看需求是不是持续、竞争是不是容易复制，以及用户获得成本最终会不会吞掉利润。</p>
+            <div class="business-meta">DEMAND · COMPETITION · RISK</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about wrap">
+      <div class="tracing-appendix">
+        <div class="appendix-inner">
+          <div class="appendix-title">About this log</div>
+          <div class="appendix-grid">
+            <div>
+              <div class="appendix-label">FOCUS / AI</div>
+              <p>AI 工具、Agent、视频与图像生成、工作流、自动化，以及实际生产中的问题。</p>
+            </div>
+            <div>
+              <div class="appendix-label">FOCUS / BUSINESS</div>
+              <p>产品拆解、商业模式、行业观察，以及一项技术最后如何变成真正的生意。</p>
+            </div>
+          </div>
+          <div class="appendix-fine">KEISHADY.GITHUB.IO · INDEPENDENT NOTES ON AI, PRODUCTS & BUSINESS</div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <section id="about" class="about">
-    <div class="container">
-      <h2>关于我</h2>
-      <p>这里填写你的简介。我主要关注 AI 工具在内容创作、编程和设计上的应用。</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 你的名字 · 用爱发电</p>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><div class="footer-label">AI TESTS</div><p>工具 · 模型 · 工作流</p></div>
+        <div><div class="footer-label">BUSINESS</div><p>产品 · 模式 · 市场</p></div>
+        <div><div class="footer-label">ARCHIVE</div><p>真实使用记录，持续更新</p></div>
+      </div>
+      <div class="footer-fine">© 2026 AI TOOLBOX LOG · BUILT ON GITHUB PAGES</div>
     </div>
   </footer>
 </body>
