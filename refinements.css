@@ -1,45 +1,45 @@
 /* Final visual refinements for AI现场 / AI Field Notes */
 
-/* ---- Header brand lockup ---- */
+/* ---- Header brand lockup: 2x emphasis ---- */
 .masthead-inner {
-  min-height: 70px;
+  min-height: 120px;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 13px;
+  gap: 22px;
   line-height: 1;
   text-decoration: none;
 }
 
 .brand-mark {
   display: block;
-  width: 46px;
-  height: 46px;
-  flex: 0 0 46px;
+  width: 92px;
+  height: 92px;
+  flex: 0 0 92px;
   object-fit: contain;
 }
 
 .brand-copy {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   min-width: 0;
 }
 
 .brand-copy .brand-cn {
   order: -1;
   color: var(--ink);
-  font-size: 16px;
+  font-size: 32px;
   line-height: 1;
   font-weight: 800;
-  letter-spacing: .04em;
+  letter-spacing: .035em;
 }
 
 .brand-copy .brand-en {
   color: var(--ink-3);
-  font-size: 10px;
+  font-size: 18px;
   line-height: 1;
   font-weight: 600;
   letter-spacing: .16em;
@@ -136,6 +136,24 @@
 }
 
 @media (max-width: 1050px) {
+  .masthead-inner {
+    min-height: 90px;
+  }
+
+  .brand-mark {
+    width: 64px;
+    height: 64px;
+    flex-basis: 64px;
+  }
+
+  .brand-copy .brand-cn {
+    font-size: 22px;
+  }
+
+  .brand-copy .brand-en {
+    font-size: 12px;
+  }
+
   .cover-grid {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -154,17 +172,17 @@
 
 @media (max-width: 600px) {
   .masthead-inner {
-    min-height: 58px;
+    min-height: 64px;
   }
 
   .brand {
-    gap: 9px;
+    gap: 10px;
   }
 
   .brand-mark {
-    width: 36px;
-    height: 36px;
-    flex-basis: 36px;
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
   }
 
   .brand-copy {
@@ -172,7 +190,7 @@
   }
 
   .brand-copy .brand-cn {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .brand-copy .brand-en {
