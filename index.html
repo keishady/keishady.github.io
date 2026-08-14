@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AI现场（AI Field Notes）：真实跑过的 AI 工具测评，覆盖 Claude Code、Codex、Agent、Skill/MCP、AI 视频、模型与工作流。">
   <title>AI现场｜AI工具测评、Claude Code、Codex、Agent、Skill、AI视频与工作流实测</title>
+  <link rel="icon" type="image/svg+xml" href="logo-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800;900&family=Spectral:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
@@ -16,9 +17,11 @@
   <header class="masthead">
     <div class="masthead-inner wrap">
       <a class="brand" href="#top" aria-label="返回首页">
-        <img src="logo-mark.svg" alt="AI现场" style="width:26px;height:26px;">
-        <span class="brand-en">AI FIELD NOTES</span>
-        <span class="brand-cn">AI现场</span>
+        <img class="brand-mark" src="logo-mark.svg" alt="AI现场">
+        <span class="brand-copy">
+          <span class="brand-en">AI FIELD NOTES</span>
+          <span class="brand-cn">AI现场</span>
+        </span>
       </a>
       <div class="issue">ISSUE 01 · 2026</div>
       <nav class="nav" aria-label="主导航">
@@ -40,6 +43,7 @@
           <span class="tag">WORKFLOW</span>
           <span class="tag">FIELD NOTES</span>
         </div>
+
         <div class="cover-grid">
           <div>
             <div class="eyebrow">AI现场 / TESTED · USED · BROKEN DOWN</div>
@@ -47,16 +51,189 @@
             <p class="dek">不管它是模型、Agent、Skill、视频工具还是自动化工作流，先实际跑起来，再记录效果、成本、限制和最终是否值得留下。</p>
             <p class="brand-tagline"><strong>真实测试 · 实际使用 · 跑过再说</strong></p>
           </div>
+
           <aside class="cover-note">
             <div class="note-label">REVIEW STANDARD</div>
-            <div class="note-block"><strong>RESULT</strong><p>真实任务里到底做成了什么，而不是发布页展示了什么。</p></div>
-            <div class="note-block"><strong>COST</strong><p>订阅、算力、时间和反复试错的总成本。</p></div>
-            <div class="note-block"><strong>LIMIT</strong><p>哪里会失败，什么场景不适合，以及是否能稳定复现。</p></div>
+            <div class="note-block">
+              <strong>RESULT</strong>
+              <p>真实任务里到底做成了什么，而不是发布页展示了什么。</p>
+            </div>
+            <div class="note-block">
+              <strong>COST</strong>
+              <p>订阅、算力、时间和反复试错的总成本。</p>
+            </div>
+            <div class="note-block">
+              <strong>LIMIT</strong>
+              <p>哪里会失败，什么场景不适合，以及是否能稳定复现。</p>
+            </div>
             <span class="stamp">AI</span>
           </aside>
         </div>
       </div>
     </section>
+
+    <section class="editorial wrap">
+      <div class="section-label">
+        <span>EDITOR'S FILE</span>
+        <span>本站怎么测</span>
+      </div>
+
+      <div class="editorial-grid">
+        <div class="editorial-copy">
+          <span class="kicker cat-models">EDITORIAL / 001</span>
+          <h2>这里不做 AI 新闻搬运。</h2>
+          <p>一款 AI 工具值不值得用，不看发布会说了什么，而看它在真实任务里能不能稳定完成、成本是多少、哪里会失败，以及最后有没有进入长期工作流。</p>
+        </div>
+
+        <aside class="verdict-panel">
+          <div class="panel-head">WHAT GETS RECORDED</div>
+          <div class="verdict">能复现的过程，比一句“好用”更重要。</div>
+          <dl>
+            <div><dt>TEST</dt><dd>实际任务与输入</dd></div>
+            <div><dt>OUTPUT</dt><dd>结果质量与稳定性</dd></div>
+            <div><dt>COST</dt><dd>时间、订阅、算力成本</dd></div>
+            <div><dt>KEEP?</dt><dd>最后是否进入日常流程</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quote-section wrap" aria-label="编辑原则">
+      <div class="tracing-card">
+        <div class="quote-small">PULL QUOTE / WORKING PRINCIPLE</div>
+        <blockquote>工具不是结论，工作流才是。</blockquote>
+        <p>先跑，先坏，先记录，再下判断。</p>
+      </div>
+    </section>
+
+    <section id="categories" class="categories wrap">
+      <div class="section-label">
+        <span>CATEGORIES</span>
+        <span>同一个 AI 测评站，不同类型的工具分开看</span>
+      </div>
+
+      <div class="category-grid">
+        <article class="category-card cat-models">
+          <span class="category-code">01 / MODELS</span>
+          <h3>模型</h3>
+          <p>大语言模型、多模态模型、图像与视频基础模型本身的能力测试。</p>
+          <div class="category-examples">GPT · Claude · Gemini · Qwen · MiniMax</div>
+        </article>
+        <article class="category-card cat-agents">
+          <span class="category-code">02 / AGENT · CODING</span>
+          <h3>Agent / 编程</h3>
+          <p>能否真正执行任务、修改代码、调用工具，以及长期协作是否稳定。</p>
+          <div class="category-examples">Codex · Claude Code · OpenCode · Pi</div>
+        </article>
+        <article class="category-card cat-skills">
+          <span class="category-code">03 / SKILL · MCP</span>
+          <h3>Skill / MCP / Plugin</h3>
+          <p>Agent 的扩展能力、技能商店、MCP 服务和插件生态到底能解决什么。</p>
+          <div class="category-examples">RedSkill · MCP · Plugins</div>
+        </article>
+        <article class="category-card cat-media">
+          <span class="category-code">04 / MEDIA</span>
+          <h3>图像 / 视频 / 音频</h3>
+          <p>生图、生视频、配音、口型、剪辑与多媒体生产工具的实际成片表现。</p>
+          <div class="category-examples">Video · Image · Audio · Lip-sync</div>
+        </article>
+        <article class="category-card cat-workflow">
+          <span class="category-code">05 / WORKFLOW</span>
+          <h3>工作流 / 自动化</h3>
+          <p>批量生产、ComfyUI、自动化串联，以及一个流程能不能持续重复使用。</p>
+          <div class="category-examples">ComfyUI · Make · Batch · Automation</div>
+        </article>
+        <article class="category-card cat-productivity">
+          <span class="category-code">06 / PRODUCTIVITY</span>
+          <h3>效率 / 研究</h3>
+          <p>搜索、写作、知识库、研究、办公与信息处理类 AI 工具。</p>
+          <div class="category-examples">Research · Search · Notes · Office</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="topics" class="topics-band">
+      <div class="wrap">
+        <div class="section-label">
+          <span>TOPICS</span>
+          <span>跨分类的连续实测会沉淀成专题</span>
+        </div>
+        <div class="topic-grid">
+          <article class="topic-card">
+            <span>VIDEO GENERATION</span>
+            <h3>视频生成实测</h3>
+            <p>模型、工作流、音视频同步、成本和批量生产放在一起看。</p>
+          </article>
+          <article class="topic-card">
+            <span>CODING AGENTS</span>
+            <h3>Agent / Coding</h3>
+            <p>不是比较聊天体验，而是比较 Codex、Claude Code、OpenCode 等工具谁真正能把任务做完。</p>
+          </article>
+          <article class="topic-card">
+            <span>SKILL ECOSYSTEM</span>
+            <h3>Skill / MCP 生态</h3>
+            <p>哪些技能值得装，哪些只是包装，以及组合起来有没有生产价值。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-head wrap">
+      <div class="section-label">
+        <span>LATEST REVIEWS</span>
+        <span>所有分类的最新实测，按发布时间排列</span>
+      </div>
+      <p class="section-intro">以后从本地编辑器发布的文章，会带着分类与标签直接出现在这里。</p>
+    </section>
+
+    <main id="posts" class="posts wrap">
+      <article class="post cat-models">
+        <header>
+          <div class="post-topline">
+            <span class="kicker cat-models">OPENING NOTE</span>
+            <span class="index-no">001</span>
+          </div>
+          <h2>AI现场写什么：只记录真正跑过的 AI 工具</h2>
+          <p class="meta">2026-08-14 · 开刊说明 · 阅读 2 分钟</p>
+          <div class="post-tags"><span class="post-tag">AI现场</span><span class="post-tag">Field Notes</span></div>
+        </header>
+        <div class="content">
+          <p>AI现场只做 AI 测评，但“AI 测评”并不是一种文章：模型、Agent、Skill、视频生成、工作流和效率工具会分开归类。</p>
+          <p>共同标准只有一个：必须真正用过。输入是什么、跑了多少次、花了多少钱、哪里成功、哪里翻车，以及最后有没有进入可用流程，都比功能列表重要。</p>
+          <blockquote>如果一个结论不能帮助下一次选择工具或设计流程，它就不值得占太多篇幅。</blockquote>
+        </div>
+      </article>
+    </main>
+
+    <section id="about" class="about wrap">
+      <div class="tracing-appendix">
+        <div class="appendix-inner">
+          <div class="appendix-title">About AI Field Notes</div>
+          <div class="appendix-grid">
+            <div>
+              <div class="appendix-label">WHAT I TEST</div>
+              <p>模型、Agent、Skill、MCP、多媒体生成、工作流、自动化，以及真正进入生产环节的 AI 工具。</p>
+            </div>
+            <div>
+              <div class="appendix-label">WHAT I RECORD</div>
+              <p>真实任务、输入输出、成本、失败点、稳定性和最终结论。尽量留下可以复现的过程。</p>
+            </div>
+          </div>
+          <div class="appendix-fine">AI现场 · AI FIELD NOTES · 真实测试 · 实际使用 · 跑过再说</div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div><div class="footer-label">LATEST</div><p>最新实测与工作流记录</p></div>
+        <div><div class="footer-label">CATEGORIES</div><p>Models · Agents · Skills · Media · Workflow</p></div>
+        <div><div class="footer-label">ARCHIVE</div><p>真实使用记录，持续更新</p></div>
+      </div>
+      <div class="footer-fine">© 2026 AI现场 · AI FIELD NOTES · BUILT ON GITHUB PAGES</div>
+    </div>
+  </footer>
 </body>
 </html>
