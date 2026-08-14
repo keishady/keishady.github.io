@@ -2,46 +2,51 @@
 
 /* ---- Header brand lockup ---- */
 .masthead-inner {
-  min-height: 58px;
+  min-height: 70px;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 13px;
   line-height: 1;
+  text-decoration: none;
 }
 
 .brand-mark {
   display: block;
-  width: 34px;
-  height: 34px;
-  flex: 0 0 34px;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
   object-fit: contain;
 }
 
 .brand-copy {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
   min-width: 0;
 }
 
 .brand-copy .brand-cn {
   order: -1;
   color: var(--ink);
-  font-size: 12px;
-  line-height: 1.05;
-  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 800;
   letter-spacing: .04em;
 }
 
 .brand-copy .brand-en {
   color: var(--ink-3);
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1;
   font-weight: 600;
-  letter-spacing: .14em;
+  letter-spacing: .16em;
+}
+
+.issue {
+  transform: translateY(1px);
 }
 
 /* ---- Hero ---- */
@@ -149,21 +154,30 @@
 
 @media (max-width: 600px) {
   .masthead-inner {
-    min-height: 52px;
+    min-height: 58px;
+  }
+
+  .brand {
+    gap: 9px;
   }
 
   .brand-mark {
-    width: 30px;
-    height: 30px;
-    flex-basis: 30px;
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+
+  .brand-copy {
+    gap: 3px;
   }
 
   .brand-copy .brand-cn {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .brand-copy .brand-en {
     font-size: 8px;
+    letter-spacing: .12em;
   }
 
   .cover {
