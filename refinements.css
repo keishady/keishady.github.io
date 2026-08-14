@@ -142,6 +142,17 @@
   font-weight: 800;
 }
 
+/* Working principle copy */
+.tracing-card > p {
+  font-size: 0;
+}
+
+.tracing-card > p::after {
+  content: "先测，先跑，先记录，再下判断。";
+  font-size: 12px;
+  line-height: 1.6;
+}
+
 /* ---- Published review cards ---- */
 .post header {
   align-self: start;
