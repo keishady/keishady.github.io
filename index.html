@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI现场（AI Field Notes）：真实跑过的 AI 工具测评，覆盖 Claude Code、Codex、Agent、Skill/MCP、AI 视频、模型与工作流。">
-  <title>AI现场｜AI工具测评、Claude Code、Codex、Agent、Skill、AI视频与工作流实测</title>
+  <meta name="description" content="AI现场（AI Field Notes）：真实测试 AI 工具，聚焦 AI 做跨境电商、MiniMax H3 AI 剧生产，以及每日 Skill/MCP/Agent 筛选实测。">
+  <title>AI现场｜跨境电商AI、MiniMax H3 AI剧与每日Skill实测</title>
   <link rel="icon" type="image/svg+xml" href="logo-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +26,9 @@
       <div class="issue">ISSUE 01 · 2026</div>
       <nav class="nav" aria-label="主导航">
         <a href="#posts">最新测评</a>
-        <a href="#categories">分类</a>
-        <a href="#topics">专题</a>
+        <a href="#commerce">跨境 AI</a>
+        <a href="#drama">AI剧实验</a>
+        <a href="#radar">Skill 雷达</a>
         <a href="#about">关于</a>
       </nav>
     </div>
@@ -102,88 +103,92 @@
       <div class="tracing-card">
         <div class="quote-small">PULL QUOTE / WORKING PRINCIPLE</div>
         <blockquote>工具不是结论，工作流才是。</blockquote>
-        <p>先跑，先坏，先记录，再下判断。</p>
+        <p>先测，先跑，先记录，再下判断。</p>
       </div>
     </section>
 
-    <section id="categories" class="categories wrap">
+    <section id="themes" class="themes wrap">
       <div class="section-label">
-        <span>CATEGORIES</span>
-        <span>同一个 AI 测评站，不同类型的工具分开看</span>
+        <span>THREE FIELDS</span>
+        <span>AI现场长期追踪的三个一级主题</span>
+      </div>
+
+      <div class="theme-grid">
+        <article id="commerce" class="theme-card theme-commerce">
+          <span class="theme-code">01 / AI × COMMERCE</span>
+          <h3>AI × 跨境电商</h3>
+          <p>把 AI 放进真实跨境业务：市场研究、选品、独立站、SEO、客户开发、素材生产、广告与自动化。</p>
+          <div class="theme-examples">RESEARCH · SHOPIFY · SEO · OUTREACH · CONTENT</div>
+        </article>
+
+        <article id="drama" class="theme-card theme-drama">
+          <span class="theme-code">02 / AI DRAMA LAB</span>
+          <h3>MiniMax H3 × AI剧</h3>
+          <p>用 MiniMax H3 做各种 AI 剧，持续测试角色一致性、分镜、对白、口型、音视频同步、批量生成与生产工作流。</p>
+          <div class="theme-examples">MINIMAX H3 · STORYBOARD · LIP-SYNC · BATCH · COMFYUI</div>
+        </article>
+
+        <article id="radar" class="theme-card theme-radar">
+          <span class="theme-code">03 / SKILL RADAR</span>
+          <h3>Skill 雷达</h3>
+          <p>每天从 GitHub、Hacker News、Product Hunt、Indie Hackers、Hugging Face 等来源筛选值得看的 Skill，再挑真正值得测试的跑一遍。</p>
+          <div class="theme-examples">SKILL · MCP · AGENT · GITHUB · PRODUCT HUNT</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="types" class="categories wrap type-index">
+      <div class="section-label">
+        <span>TYPE INDEX</span>
+        <span>二级类型：说明这篇内容测的是什么，不取代一级主题</span>
       </div>
 
       <div class="category-grid">
         <article class="category-card cat-models">
-          <span class="category-code">01 / MODELS</span>
+          <span class="category-code">MODELS</span>
           <h3>模型</h3>
-          <p>大语言模型、多模态模型、图像与视频基础模型本身的能力测试。</p>
+          <p>大语言模型、多模态模型、图像与视频基础模型。</p>
           <div class="category-examples">GPT · Claude · Gemini · Qwen · MiniMax</div>
         </article>
         <article class="category-card cat-agents">
-          <span class="category-code">02 / AGENT · CODING</span>
+          <span class="category-code">AGENT · CODING</span>
           <h3>Agent / 编程</h3>
-          <p>能否真正执行任务、修改代码、调用工具，以及长期协作是否稳定。</p>
+          <p>执行任务、修改代码、调用工具与长任务协作。</p>
           <div class="category-examples">Codex · Claude Code · OpenCode · Pi</div>
         </article>
         <article class="category-card cat-skills">
-          <span class="category-code">03 / SKILL · MCP</span>
+          <span class="category-code">SKILL · MCP</span>
           <h3>Skill / MCP / Plugin</h3>
-          <p>Agent 的扩展能力、技能商店、MCP 服务和插件生态到底能解决什么。</p>
+          <p>Agent 扩展能力、MCP 服务和插件生态。</p>
           <div class="category-examples">RedSkill · MCP · Plugins</div>
         </article>
         <article class="category-card cat-media">
-          <span class="category-code">04 / MEDIA</span>
+          <span class="category-code">MEDIA</span>
           <h3>图像 / 视频 / 音频</h3>
-          <p>生图、生视频、配音、口型、剪辑与多媒体生产工具的实际成片表现。</p>
-          <div class="category-examples">Video · Image · Audio · Lip-sync</div>
+          <p>生图、生视频、配音、口型、剪辑与多媒体生产。</p>
+          <div class="category-examples">VIDEO · IMAGE · AUDIO · LIP-SYNC</div>
         </article>
         <article class="category-card cat-workflow">
-          <span class="category-code">05 / WORKFLOW</span>
+          <span class="category-code">WORKFLOW</span>
           <h3>工作流 / 自动化</h3>
-          <p>批量生产、ComfyUI、自动化串联，以及一个流程能不能持续重复使用。</p>
-          <div class="category-examples">ComfyUI · Make · Batch · Automation</div>
+          <p>批量生产、ComfyUI、自动化串联与可复用流程。</p>
+          <div class="category-examples">COMFYUI · MAKE · BATCH · AUTOMATION</div>
         </article>
         <article class="category-card cat-productivity">
-          <span class="category-code">06 / PRODUCTIVITY</span>
+          <span class="category-code">PRODUCTIVITY</span>
           <h3>效率 / 研究</h3>
-          <p>搜索、写作、知识库、研究、办公与信息处理类 AI 工具。</p>
-          <div class="category-examples">Research · Search · Notes · Office</div>
+          <p>搜索、写作、知识库、研究与办公信息处理。</p>
+          <div class="category-examples">RESEARCH · SEARCH · NOTES · OFFICE</div>
         </article>
-      </div>
-    </section>
-
-    <section id="topics" class="topics-band">
-      <div class="wrap">
-        <div class="section-label">
-          <span>TOPICS</span>
-          <span>跨分类的连续实测会沉淀成专题</span>
-        </div>
-        <div class="topic-grid">
-          <article class="topic-card">
-            <span>VIDEO GENERATION</span>
-            <h3>视频生成实测</h3>
-            <p>模型、工作流、音视频同步、成本和批量生产放在一起看。</p>
-          </article>
-          <article class="topic-card">
-            <span>CODING AGENTS</span>
-            <h3>Agent / Coding</h3>
-            <p>不是比较聊天体验，而是比较 Codex、Claude Code、OpenCode 等工具谁真正能把任务做完。</p>
-          </article>
-          <article class="topic-card">
-            <span>SKILL ECOSYSTEM</span>
-            <h3>Skill / MCP 生态</h3>
-            <p>哪些技能值得装，哪些只是包装，以及组合起来有没有生产价值。</p>
-          </article>
-        </div>
       </div>
     </section>
 
     <section class="latest-head wrap">
       <div class="section-label">
         <span>LATEST REVIEWS</span>
-        <span>所有分类的最新实测，按发布时间排列</span>
+        <span>三个主题的最新实测，按发布时间排列</span>
       </div>
-      <p class="section-intro">以后从本地编辑器发布的文章，会带着分类与标签直接出现在这里。</p>
+      <p class="section-intro">以后从本地编辑器发布的文章，会同时带着 Theme、Type 和 Tags 出现在这里。</p>
     </section>
 
     <main id="posts" class="posts wrap">
@@ -193,14 +198,14 @@
             <span class="kicker cat-models">OPENING NOTE</span>
             <span class="index-no">001</span>
           </div>
-          <h2>AI现场写什么：只记录真正跑过的 AI 工具</h2>
+          <h2>AI现场写什么：三个主题，全部跑过再说</h2>
           <p class="meta">2026-08-14 · 开刊说明 · 阅读 2 分钟</p>
           <div class="post-tags"><span class="post-tag">AI现场</span><span class="post-tag">Field Notes</span></div>
         </header>
         <div class="content">
-          <p>AI现场只做 AI 测评，但“AI 测评”并不是一种文章：模型、Agent、Skill、视频生成、工作流和效率工具会分开归类。</p>
-          <p>共同标准只有一个：必须真正用过。输入是什么、跑了多少次、花了多少钱、哪里成功、哪里翻车，以及最后有没有进入可用流程，都比功能列表重要。</p>
-          <blockquote>如果一个结论不能帮助下一次选择工具或设计流程，它就不值得占太多篇幅。</blockquote>
+          <p>AI现场只做真实 AI 实测，目前长期追踪三条主线：AI 做跨境电商、MiniMax H3 做 AI 剧，以及每天筛选并实测值得关注的新 Skill。</p>
+          <p>Models、Agent、Skill、Media、Workflow、Productivity 仍然保留，但它们只是二级类型，用来说明一篇文章测的是什么；真正决定内容方向的是这三个一级主题。</p>
+          <blockquote>先确定真实问题，再选工具；先跑过，再评价。</blockquote>
         </div>
       </article>
     </main>
@@ -211,8 +216,8 @@
           <div class="appendix-title">About AI Field Notes</div>
           <div class="appendix-grid">
             <div>
-              <div class="appendix-label">WHAT I TEST</div>
-              <p>模型、Agent、Skill、MCP、多媒体生成、工作流、自动化，以及真正进入生产环节的 AI 工具。</p>
+              <div class="appendix-label">THREE FIELDS</div>
+              <p>跨境电商 AI、MiniMax H3 AI 剧实验、Skill 雷达。内容围绕真实任务持续累积，而不是追逐功能列表。</p>
             </div>
             <div>
               <div class="appendix-label">WHAT I RECORD</div>
@@ -228,9 +233,9 @@
   <footer class="footer">
     <div class="wrap">
       <div class="footer-grid">
-        <div><div class="footer-label">LATEST</div><p>最新实测与工作流记录</p></div>
-        <div><div class="footer-label">CATEGORIES</div><p>Models · Agents · Skills · Media · Workflow</p></div>
-        <div><div class="footer-label">ARCHIVE</div><p>真实使用记录，持续更新</p></div>
+        <div><div class="footer-label">COMMERCE</div><p>AI × 跨境电商</p></div>
+        <div><div class="footer-label">AI DRAMA</div><p>MiniMax H3 × AI剧</p></div>
+        <div><div class="footer-label">SKILL RADAR</div><p>每日新 Skill 筛选与实测</p></div>
       </div>
       <div class="footer-fine">© 2026 AI现场 · AI FIELD NOTES · BUILT ON GITHUB PAGES</div>
     </div>
