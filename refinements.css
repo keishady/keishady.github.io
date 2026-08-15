@@ -13,12 +13,19 @@
   text-decoration: none;
 }
 
+/* Do not render the previously uploaded broken PNG. Use the self-contained
+   official-logo SVG as the visible brand mark instead. */
 .brand-mark {
+  display: none !important;
+}
+
+.brand::before {
+  content: "";
   display: block;
   width: 92px;
   height: 92px;
   flex: 0 0 92px;
-  object-fit: contain;
+  background: url("logo-mark.svg") center / contain no-repeat;
 }
 
 .brand-copy {
@@ -49,7 +56,6 @@
   transform: translateY(1px);
 }
 
-/* Navigation needs to read as navigation, not micro-copy. */
 .nav {
   gap: 30px;
 }
@@ -133,7 +139,6 @@
   letter-spacing: .08em;
 }
 
-/* The second headline should support the page, not compete with the hero. */
 .editorial-copy h2 {
   margin: 16px 0 12px;
   font-size: clamp(27px, 2.9vw, 40px);
@@ -142,7 +147,6 @@
   font-weight: 800;
 }
 
-/* Working principle copy */
 .tracing-card > p {
   font-size: 0;
 }
@@ -153,7 +157,6 @@
   line-height: 1.6;
 }
 
-/* ---- Published review cards ---- */
 .post header {
   align-self: start;
 }
@@ -171,7 +174,7 @@
     min-height: 90px;
   }
 
-  .brand-mark {
+  .brand::before {
     width: 64px;
     height: 64px;
     flex-basis: 64px;
@@ -218,7 +221,7 @@
     gap: 10px;
   }
 
-  .brand-mark {
+  .brand::before {
     width: 42px;
     height: 42px;
     flex-basis: 42px;
