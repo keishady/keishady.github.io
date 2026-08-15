@@ -13,19 +13,18 @@
   text-decoration: none;
 }
 
-/* Do not render the previously uploaded broken PNG. Use the self-contained
-   official-logo SVG as the visible brand mark instead. */
+/* Render the official PNG directly. */
 .brand-mark {
-  display: none !important;
-}
-
-.brand::before {
-  content: "";
-  display: block;
+  display: block !important;
   width: 92px;
   height: 92px;
   flex: 0 0 92px;
-  background: url("logo-mark.svg") center / contain no-repeat;
+  object-fit: contain;
+}
+
+.brand::before {
+  display: none !important;
+  content: none !important;
 }
 
 .brand-copy {
@@ -174,7 +173,7 @@
     min-height: 90px;
   }
 
-  .brand::before {
+  .brand-mark {
     width: 64px;
     height: 64px;
     flex-basis: 64px;
@@ -221,7 +220,7 @@
     gap: 10px;
   }
 
-  .brand::before {
+  .brand-mark {
     width: 42px;
     height: 42px;
     flex-basis: 42px;
